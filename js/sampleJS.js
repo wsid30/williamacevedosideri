@@ -48,3 +48,9 @@ function eliminateCard(){
     console.log(selectedElement);
     selectedElement.style.display = "none";
 }
+
+function sorter(list){
+    let selectedElement = document.getElementById("fruitBody");
+    list.sort();
+    selectedElement.innerText = list[list.length-1];
+}

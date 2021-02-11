@@ -1,1 +1,22 @@
-body{background: black;}
+body{background-color: #dcd8c0;
+    color: black;}
+
+    .carousel-inner > .item > img {
+        width:640px;
+        height:360px;
+        opacity: 0.5;
+        filter: alpha(opacity=40);
+      }
+      .carousel-inner > .item > img{
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+      }
+      .carousel-caption{
+        opacity:0;
+        transition:500ms ease-in-out;
+      }
+      .carousel-item:hover .carousel-caption{
+        opacity:1;
+      }
+      
+   
