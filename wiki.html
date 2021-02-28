@@ -28,13 +28,13 @@
               </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="Contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              <a class="nav-link" href="Contact.html" tabindex="-1" aria-disabled="true">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="mapAPI.html" tabindex="-1" aria-disabled="true">Map API Example</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="wiki.html" tabindex="-1" aria-disabled="true">Wikipedia Example</a>
+              <a class="nav-link active" href="wiki.html" tabindex="-1" aria-disabled="true">Wikipedia Example</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="rstiTexts.html" tabindex="-1" aria-disabled="true">OCHRE API Example</a>
@@ -45,12 +45,24 @@
       </div>
       
     </nav>
-    <title>Contact</title>
+    <title>WikiAPI</title>
   </head>
   <body>
     <div id="nav-placeholder"></div>
     <div class="container mt-3">
-      <div id='title'>wmacevedosideri@uchicago.edu</div>
+      <div id='title'>Wiki API Example</div>
+     
+      <form>
+        <div class='row'>
+          <div class='col'>
+            <input id="searchTerm" type='text' class='form-control' placeholder="Enter your search term here">
+          </div>
+        </div>
+      </form>
+
+      <button type="submit" class="btn btn-dark my-3" onclick="wikiAPI()">Search</button>
+      
+      <div class='containter' id='wiki'></div>
     </div>
 
 
@@ -59,6 +71,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-  </body>
+    <script src="js/wikiAPI.js"></script>
+</body>
 </html>
